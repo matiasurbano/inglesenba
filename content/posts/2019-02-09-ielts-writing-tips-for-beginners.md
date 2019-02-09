@@ -1,7 +1,7 @@
 ---
 template: post
 title: 'IELTS Writing Tips for Beginners '
-slug: asdasd
+slug: /posts/ielts-writing-tips
 draft: true
 date: 2019-02-09T01:28:46.544Z
 description: asdasdasdasdas
