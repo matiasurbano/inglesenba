@@ -1,7 +1,7 @@
 ---
 template: page
 title: Acerca de Aaron
-slug: acerca-de-aaron
+slug: /pages/acerca-de-aaron
 draft: false
 ---
 Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
