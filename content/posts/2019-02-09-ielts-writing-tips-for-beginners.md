@@ -7,9 +7,7 @@ date: 2019-02-09T01:28:46.544Z
 description: asdasdasdasdas
 category: IELTS
 tags:
-  - writing
-  - ielts
-  - english
+  - Handwriting
 ---
 The **TOP 3 IELTS **general tips you can’t miss! 
 
