@@ -1,5 +1,6 @@
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
+import { Link, withPrefix, graphql, StaticQuery } from 'gatsby';
+import kebabCase from 'lodash/kebabCase';
 import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
@@ -13,12 +14,30 @@ export const PureSidebar = ({ data, isIndex }) => {
     menu
   } = data.site.siteMetadata;
 
+  const { group } = data.allMarkdownRemark;
+
   return (
     <div className={styles['sidebar']}>
       <div className={styles['sidebar__inner']}>
-        <Author author={author} isIndex={isIndex} />
+        <Link to="/">
+          <img
+            src={withPrefix('logo.png')}
+            className={styles['author__photo']}
+            alt={author.name}
+          />
+        </Link>
+        {/* <Author author={author} isIndex={isIndex} /> */}
         <Menu menu={menu} />
-        <Contacts contacts={author.contacts} />
+        <ul>
+          {group.map((category) => (
+            <li key={category.fieldValue}>
+              <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
+                {category.fieldValue} ({category.totalCount})
+              </Link>
+            </li>
+          ))}
+        </ul>
+        {/* <Contacts contacts={author.contacts} /> */}
         <Copyright copyright={copyright} />
       </div>
     </div>
@@ -51,6 +70,14 @@ export const Sidebar = (props) => (
                 vkontakte
               }
             }
+          }
+        }
+        allMarkdownRemark(
+          filter: { frontmatter: { template: { eq: "post" }, draft: { ne: true } } }
+        ) {
+          group(field: frontmatter___category) {
+            fieldValue
+            totalCount
           }
         }
       }
