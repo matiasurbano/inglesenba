@@ -26,17 +26,19 @@ export const PureSidebar = ({ data, isIndex }) => {
             alt={author.name}
           />
         </Link>
-        {/* <Author author={author} isIndex={isIndex} /> */}
-        <Menu menu={menu} />
-        <ul>
-          {group.map((category) => (
-            <li key={category.fieldValue}>
-              <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
-                {category.fieldValue} ({category.totalCount})
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <Menu/>
+        <div className={styles['resources']}>
+          <b>Resources</b>
+          <ul>
+            {group.map((category) => (
+              <li key={category.fieldValue}>
+                <Link to={`/category/${kebabCase(category.fieldValue)}/`}>
+                  {category.fieldValue} ({category.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
         {/* <Contacts contacts={author.contacts} /> */}
         <Copyright copyright={copyright} />
       </div>

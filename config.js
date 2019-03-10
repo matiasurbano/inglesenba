@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  url: 'https://www.inglesenba.com.ar',
+  title: 'Ingles en BA',
+  subtitle: 'Ingles en Buenos Aires',
   copyright: '© All rights reserved.',
   disqusShortname: '',
-  postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  postsPerPage: 5,
+  googleAnalyticsId: '',
   menu: [
     {
       label: 'Articles',
@@ -23,9 +23,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Aaron James Stehbens',
+    photo: '/logo.png',
+    bio: 'Profesor Nativo de Ingles, Clases Particulares De Ingles en Capital Federal con Nativo de Australia.',
     contacts: {
       email: '#',
       telegram: '#',

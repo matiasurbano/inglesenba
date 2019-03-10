@@ -1,7 +1,6 @@
 ---
-template: page
-title: Acerca de Aaron
-slug: acerca-de-aaron
-draft: false
+title: "Acerca de Aaron"
+template: "page"
 ---
-Some text
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
